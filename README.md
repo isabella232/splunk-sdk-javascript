@@ -246,36 +246,9 @@ function (err) {
 });
 ```
 
-### Client-side examples
+### Client-side examples & Node.js examples
 
-The Splunk Enterprise SDK for JavaScript includes several browser-based examples, which you can run from the Examples web page.
-
-To start a simple web server and open the Examples page in a web browser, enter:
-
-    node sdkdo examples
-
-### Node.js examples
-
-The Splunk Enterprise SDK for JavaScript includes several command-line examples, which are located in the **/splunk-sdk-javascript/examples/node** directory. These examples run with Node.js and use the command-line arguments from the **.splunkrc** file, if you set this up with your login credentials.
-
-For example, to run the **jobs.js** example, open a command prompt in the **/splunk-sdk-javascript/examples/node** directory and enter:
-
-    node jobs.js list
-
-If you aren't storing your login credentials in **.splunkrc**, enter the following command, providing your own values:
-
-    node jobs.js --username yourusername --password yourpassword list
-
-Your output should look something like this:
-
-    ~\splunk-sdk-javascript\examples\node> node .\jobs.js list
-      Job 1 sid: scheduler__nobody__search_VG9wIGZpdmUgc291cmNldHlwZXM_at_1323917700_79740ae7e22350d6
-      Job 2 sid: scheduler__nobody__search_VG9wIGZpdmUgc291cmNldHlwZXM_at_1323917400_0dceb302931a2b3f
-      Job 3 sid: scheduler__nobody__search_SW5kZXhpbmcgd29ya2xvYWQ_at_1323917100_48fb4cc65a25c5b1
-      Job 4 sid: scheduler__nobody__search_SW5kZXhpbmcgd29ya2xvYWQ_at_1323916200_b2f239fef7834523
-      Job 5 sid: scheduler__nobody__unix_QWxlcnQgLSBzeXNsb2cgZXJyb3JzIGxhc3QgaG91cg_at_1323914400_96cb9084680b25d7
-      Job 6 sid: admin__admin__search_TXkgQXdlc29tZSBTYXZlZCBTZWFyY2g_1323901055.6
-    ==============
+Please refer [splunk-app-examples](https://github.com/splunk/splunk-app-examples/tree/master/javascript) repo for client examples.
 
 ## Development
 
@@ -335,7 +308,7 @@ To get more info to run tests, enter:
 | /client       | Pre-built files for the browser                            |
 | /contrib      | Packaged third-party dependencies (such as test runners)   |
 | /docs         | API reference documentation                                |
-| /examples     | Examples                                                   |
+<!-- | /examples     | Examples                                                   | -->
 | /lib          | The SDK code files                                         |
 | /licenses     | License information for packaged third-party dependencies  |
 | /node_modules | JavaScript modules used by Node.js                         |
